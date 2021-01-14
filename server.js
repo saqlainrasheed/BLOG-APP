@@ -29,6 +29,6 @@ app.use("/", Posts);
 app.use("/", Admin);
 
 //server Listening
-app.listen(5000 || process.env.PORT, () =>
+app.listen(process.env.PORT, () =>
   console.log(`App listening at http://localhost:${process.env.PORT}`)
 );
