@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const port = 5000 || process.env.PORT;
+
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Admin = require("./controller/Admin");
@@ -29,6 +29,6 @@ app.use("/", Posts);
 app.use("/", Admin);
 
 //server Listening
-app.listen(port, () =>
-  console.log(`App listening at http://localhost:${port}`)
+app.listen(5000 || process.env.PORT, () =>
+  console.log(`App listening at http://localhost:${process.env.PORT}`)
 );
