@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const port = 5000 || process.env.port;
+const port = 5000 || process.env.PORT;
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Admin = require("./controller/Admin");
